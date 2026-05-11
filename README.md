@@ -85,7 +85,7 @@ throwaway.email
 Fetch the latest version directly from GitHub:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/castle/disposable-email-domains/main/disposable-email-domains.txt
+curl -sL https://raw.githubusercontent.com/castle/disposable-email-domains/master/disposable-email-domains.txt
 ```
 
 The dataset is intentionally small enough to load entirely into memory.
@@ -95,7 +95,7 @@ The dataset is intentionally small enough to load entirely into memory.
 ```python
 import urllib.request
 
-URL = "https://raw.githubusercontent.com/castle/disposable-email-domains/main/disposable-email-domains.txt"
+URL = "https://raw.githubusercontent.com/castle/disposable-email-domains/master/disposable-email-domains.txt"
 
 disposable_domains = set(
     urllib.request.urlopen(URL)
@@ -113,7 +113,7 @@ def is_disposable(email: str) -> bool:
 
 ```javascript
 const response = await fetch(
-  "https://raw.githubusercontent.com/castle/disposable-email-domains/main/disposable-email-domains.txt"
+  "https://raw.githubusercontent.com/castle/disposable-email-domains/master/disposable-email-domains.txt"
 );
 
 const text = await response.text();
